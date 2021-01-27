@@ -1,0 +1,4 @@
+2021-01-23T19:17:18+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\bumps\wp-includes\blocks.php on line 190
+
+2021-01-23T19:24:00+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\bumps\wp-includes\wp-db.php on line 2056
+
