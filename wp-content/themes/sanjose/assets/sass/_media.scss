@@ -1,0 +1,1239 @@
+@media ( max-width: 1550px ) {
+    .wpb_single_image.absolute-image{
+        width: inherit !important;
+    }
+}
+@media ( max-width: 1450px ) {
+
+    /* Main footer */
+    .main-footer {
+        padding: 75px 0 50px;
+    }
+
+    .footer-bottom {
+        padding: 40px 0 30px;
+    }
+    .wpb_single_image.wpb_content_element.position-left{
+        left: inherit;
+    }
+}
+@media screen and (max-width: 1445px) and (min-width: 1210px) {
+    .visible-hidden {
+        .wpb_wrapper.vc_figure{
+            img {
+                max-height: 600px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1300px ) {
+    .sanjose-text {
+        h2 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media ( max-width: 1279px ) {
+
+    .absolute-wrapp-img {
+        display: none;
+    }
+    /* Portfolio */
+    .wrapper-portfolio{
+        .slider-gallery {
+            .gallery-slide-preview {
+                position: relative;
+                border: none;
+            }
+            .swiper-container {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                transform: rotateZ(0deg) translateX(0px);
+
+
+                .swiper-slide {
+                    transform: rotateZ(0deg);
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1199px ) {
+    .post-comments {
+        .comment-reply-title,
+        .title-comment {
+            &:after {
+                width: 71%;
+            }
+        }
+    }
+    /* Main Header */
+    .main-header {
+        .navigation {
+            ul {
+                li {
+
+                    margin-right: 20px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Main footer */
+    .main-footer {
+        .mc4wp-form {
+            .form-subscribe {
+                input[type="email"] {
+                    max-width: 60%;
+                    padding: 12px 15px;
+                }
+
+                input[type="submit"] {
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+
+    /* Blog page */
+    .blog-list {
+        &.modern {
+            .post-item {
+                .content-post {
+                    transform: translateY(63%);
+
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover {
+                    .content-post {
+                        padding: 20px 20px 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Pricing */
+    .sanjose-pricing {
+
+        &.modern {
+            text-align: center;
+        }
+
+        .pricing-item {
+            padding: 47px 15px 55px;
+        }
+    }
+
+    /* Banner */
+    .sanjose-banner {
+        &.style_2 {
+            .content-banner {
+                .title {
+                    font-size: 52px;
+                    line-height: 62px;
+                }
+            }
+        }
+    }
+
+    /* Product slideshow */
+    .sanjose-product-slideshow {
+        .product-content {
+            .info-item {
+
+                .indicator {
+                    width: 172px;
+                }
+
+                &.show-info {
+                    .info-icon {
+                        &:before {
+                            width: 160px;
+                        }
+                    }
+                }
+
+                &.left.top {
+                    left: -30px;
+                }
+
+                &.right.top {
+                    right: -30px;
+                }
+
+                &.left.bottom {
+                    left: 0;
+                }
+
+                &.right.bottom {
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media ( min-width: 992px ) {
+    .video-iframe.video_popup{
+        background: none!important;
+    }
+}
+@media ( max-width: 991px ) {
+    .style_2 {
+        .play-button {
+            display: block;
+            background-color: #f42267;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            z-index: 2122;
+
+            &:before {
+                content: '';
+                border: 12px solid transparent;
+                border-left: 22px solid #fff;
+                position: absolute;
+                top: 50%;
+                left: 67%;
+                transform: translate(-67%, -50%);
+            }
+        }
+        .close-btn {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            z-index: 9999;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            cursor: pointer;
+            opacity: 1;
+            transition: all 0.5s ease;
+
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 30px;
+                height: 2px;
+                background: #da0d2b;
+            }
+
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        .play-button.start{
+            display: none;
+        }
+    }
+    .sanjose-contact-form input,
+    .sanjose-contact-form textarea,
+    .sanjose-contact-form label.icon-upload{
+        margin-left: 0;
+    }
+    .padd-sm-15{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .absolute-image {
+        position: static !important;
+        right: auto;
+        margin: 30px 0 !important;
+    }
+
+    /* Main Header */
+    #mm-main-menu {
+        background-color: $color2;
+
+
+        .mm-listview > li > a,
+        .mm-listview > li > span {
+            font: 300 16px $font1;
+            color: $color1;
+        }
+
+        .mm-navbar {
+            border-bottom: 1px solid transparent;
+
+            a {
+                font: 300 16px $font1;
+                color: $color1;
+            }
+        }
+
+        .mm-listview > li,
+        .mm-listview > li .mm-next,
+        .mm-listview > li .mm-next:before,
+        .mm-listview > li:after,
+        .mm-next:after,
+        .mm-prev:before {
+            border-color: $color1;
+        }
+
+        .mm-clear:after,
+        .mm-clear:before,
+        .mm-close:after,
+        .mm-close:before {
+            width: 8px;
+            height: 8px;
+            border-width: 1px;
+            border-color: $color1;
+        }
+
+        .mm-clear:before,
+        .mm-close:before {
+            right: 15px;
+        }
+
+        .mm-close {
+            position: static;
+        }
+    }
+
+    .sanjose-text {
+        h2 {
+            font-size: 42px;
+            line-height: 42px;
+        }
+    }
+
+    .main-header {
+        .navigation {
+            display: none;
+        }
+
+        .menu-hamburger {
+            float: right;
+            position: relative;
+            width: 30px;
+            height: 30px;
+
+            i {
+                display: block;
+                background-color: $color1;
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:before,
+                &:after {
+                    content: '';
+                    background-color: $color1;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+
+                &:before {
+                    top: -8px;
+                }
+
+                &:after {
+                    top: 8px;
+                }
+            }
+        }
+    }
+
+    /* Main Footer */
+    .main-footer {
+
+        padding: 60px 0;
+
+        &__subscribe {
+            margin-top: 30px;
+            max-width: 60%;
+        }
+    }
+
+    .footer-bottom {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    /* Testimonials */
+    .sanjose-testimonials-slider {
+        &.default {
+            margin: 0;
+        }
+
+        &.modern {
+            .slide-prev,
+            .slide-next {
+                top: 40%;
+                transform: translateY(-40%);
+            }
+        }
+    }
+
+    /* Blog page */
+    .blog-list {
+        &.modern {
+            .post-item {
+                .content-post {
+                    transform: translateY(68%);
+                }
+            }
+        }
+    }
+
+    /* Video banner */
+    .sanjose-video-banner {
+        height: 350px;
+    }
+
+    /* Clients */
+    .sanjose-clients {
+        .clients-item {
+            width: 33.3333%;
+        }
+    }
+
+    /* Post blog */
+    .post-comments {
+        #sanjose-comment-form {
+            margin-left: 0;
+        }
+
+        .sanjose-comments-list {
+            li {
+                .comm-img {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .sidebar.blog-sidebar {
+        margin-top: 50px;
+    }
+
+    .featured-border .vc_column-inner {
+        border: none !important;
+    }
+
+    /* Banner */
+    .sanjose-banner {
+        &.style_1 {
+            margin-bottom: 0;
+
+            .content-banner {
+                .title {
+                    font-size: 52px;
+                }
+            }
+
+            .absolute-wrapp-img {
+                max-width: 600px;
+            }
+        }
+
+        &.style_2 {
+            height: inherit;
+
+            .content-banner {
+                position: relative;
+                top: inherit;
+                transform: none;
+                padding: 90px 0;
+            }
+
+            .wrapp-img {
+                display: none;
+            }
+        }
+    }
+
+    /* Contact form */
+    .custom-form-2 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+        .wpcf7-form {
+            max-width: 100%;
+        }
+    }
+
+    /* Sanjose text */
+    .sanjose-text {
+        br {
+            display: none;
+        }
+
+        &.custom-size {
+            .link {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    /* Product slideshow */
+    .sanjose-product-slideshow {
+        .product-content {
+            height: 500px;
+
+            .info-item {
+                display: none;
+            }
+        }
+    }
+
+    /* Timeline */
+    .sanjose-timeline {
+        .tabs-header {
+            margin-top: 30px;
+
+            .tab-item {
+                padding-bottom: 50px;
+
+                .counter {
+                    position: relative;
+                    top: -3px;
+                    left: 0;
+                    margin-right: 15px;
+                }
+
+                p {
+                    padding-left: 50px;
+                }
+            }
+        }
+
+        .tab-content {
+            .swiper-container {
+                .pagination {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    .sanjose-info-block {
+        .item-info {
+            margin-bottom: 60px;
+            .img {
+                margin: 0 auto;
+            }
+            .info-wrap {
+                max-width: 100%;
+            }
+        }
+    }
+    .blog-list{
+        &.vertical{
+            .post {
+                .content-post {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .post-comments {
+        .comment-reply-title,
+        .title-comment {
+            &:after {
+                width: 71%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 520px) {
+    .widget_search {
+        label {
+            width: 65% !important;
+        }
+    }
+}
+@media ( max-width: 768px ) {
+    .featured-bloc-right,
+    .featured-block-center,
+    .featured-block-right_bottom,
+    .featured-bloc-left,
+    .featured-block-left_bottom{
+        border: none;
+    }
+}
+@media ( max-width: 767px ) {
+    /* Testimonials */
+    .sanjose-testimonials-slider {
+        &.modern {
+            .pagination {
+                .swiper-pagination-switch {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 30px;
+
+                    &.swiper-active-switch {
+                        width: 70px;
+                        height: 70px;
+                        top: 10px;
+                    }
+                }
+            }
+
+            .slide-prev,
+            .slide-next {
+                top: 30%;
+                transform: translateY(-30%);
+            }
+        }
+    }
+
+    /* Blog page */
+    .banner-blog__content {
+        h2 {
+            font-size: 52px;
+            line-height: 52px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .blog-list {
+        &.modern {
+            .post {
+                height: 300px;
+            }
+
+            .post-item {
+                .content-post {
+                    padding: 15px 20px 0;
+                    transform: translateY(65%);
+                }
+            }
+        }
+
+        &.vertical {
+            .post {
+                .wrapp-img,
+                .content-post {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }
+
+    /* Video banner */
+    .sanjose-video-banner {
+        height: 330px;
+
+        .button-play {
+            width: 50px;
+            height: 50px;
+
+            &:before {
+                border: 8px solid transparent;
+                border-left: 15px solid #fff;
+                left: 70%;
+                transform: translate(-70%, -50%);
+            }
+        }
+    }
+
+    /* Clients */
+    .sanjose-clients {
+        .clients-item {
+            width: 50%;
+        }
+    }
+    .sanjose-wrap-info {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* Post blog */
+    .post-detail {
+        .title-post {
+            font-size: 42px;
+        }
+    }
+
+    .post-comments {
+        #sanjose-comment-form {
+            margin-top: 30px;
+        }
+    }
+
+    /* Featured block */
+    .featured-block {
+        &.text-right,
+        &.text-left {
+            text-align: center;
+        }
+    }
+
+    .padd-xs-15 {
+        &.vc_row.vc_row-no-padding {
+            .vc_column-inner {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .absolute-image {
+        position: static !important;
+        width: inherit !important;
+        text-align: left !important;
+        margin-top: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+
+    /* Timeline */
+    .sanjose-timeline {
+        .tab-content {
+            .swiper-container {
+                .swiper-slide {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+
+    .wrapper-portfolio {
+        .slider-gallery {
+            .gallery-slide-preview {
+                height: 280px;
+            }
+        }
+    }
+
+    // accordion
+
+    .sanjose-accordion {
+        &.style_3 {
+            .panel {
+                margin-bottom: 0;
+            }
+        }
+        .panel {
+            .panel-title {
+                a {
+                    font-size: 18px;
+                    .icon {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .post-comments{
+        .title-comment{
+            &:after {
+                width: 75%;
+            }
+        }
+    }
+    
+    // blog
+    .pagination a,
+    .pagination span {
+        font-size: 13px;
+        margin-right: 10px;
+        width: 100px !important;
+    }
+    .sidebar {
+        .sanjose-widget {
+            &.widget_nav_menu {
+                ul {
+                    li ul {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .search-banner {
+        height: 100px;
+        margin-bottom: 60px;
+        .content-banner {
+            bottom: 0;
+            transform: none;
+        }
+    }
+    .search .blog-list.default {
+        .post, .page {
+            margin-bottom: 0;
+        }
+    }
+    p:empty {
+        display: none;
+    }
+    .default-blog {
+        h1, h2, h3, h4, h5, h6, pre {
+            white-space: normal;
+        }
+        .post-comments {
+            .sanjose-comments-list {
+                li {
+                    .comm-txt {
+                        width: 100%;
+                    }
+                    .children {
+                        padding-left: 0;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+@media ( max-width: 600px ) {
+    /* Blog page */
+    .blog-list {
+        &.modern {
+            .post {
+                height: 252px;
+            }
+
+            .post-item {
+                .content-post {
+                    padding: 30px 20px;
+                    transform: translateY(0);
+                }
+
+                &:hover {
+                    .content-post {
+                        padding: 30px 20px;
+
+                        h6 {
+                            margin-bottom: 12px;
+                        }
+
+                        .modern-info {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  .content-banner {
+    .title {
+      font-size: 32px!important;
+    }
+  }
+    .mobile-spase{
+        .iframe-video.banner-video.youtube{
+            height: 100vh!important;
+        }
+    }
+}
+
+
+@media ( max-width: 580px ) {
+    .sanjose-pricing{
+        .info-price{
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    /* Main Footer */
+    .main-footer {
+        &__subscribe {
+            max-width: 100%;
+        }
+
+        .mc4wp-form {
+            .form-subscribe {
+                input[type="submit"] {
+                    padding: 15px 25px;
+                }
+            }
+        }
+    }
+
+    /* Text block */
+    .sanjose-text {
+        h2 {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    /* Testimonials */
+    .sanjose-testimonials-slider {
+        &.default {
+            .pagination {
+                margin-bottom: 50px;
+            }
+        }
+
+        &.modern {
+            .content-slide {
+                .content {
+                    p {
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Blog page */
+    .banner-blog__content {
+        h2 {
+            font-size: 38px;
+            line-height: 38px;
+            margin-bottom: 35px;
+        }
+
+        h6 {
+            font-size: 12px;
+        }
+    }
+
+    .blog-list {
+        &.vertical {
+            .post {
+                .wrapp-img {
+                    height: 250px;
+                }
+
+                .content-post {
+                    h6 {
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .entry-meta {
+                        margin-top: 20px;
+
+                        li:first-child {
+                            font-size: 14px;
+                        }
+
+                        li:last-child {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Clients */
+    .sanjose-clients {
+        .clients-item {
+            width: 100%;
+        }
+    }
+
+    /* Post blog */
+    .post-detail {
+        .wrapp-img {
+            height: 250px;
+        }
+
+        .title-post {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    /* Banner */
+    .sanjose-banner {
+        &.style_1 {
+            height: 500px;
+            margin-bottom: 0;
+
+            .content-banner {
+                top: 20%;
+                transform: translateY(-20%);
+
+                .title {
+                    font-size: 32px;
+                }
+
+                .subtitle {
+                    font-size: 12px;
+                }
+
+                .btn {
+                    font-size: 10px;
+                }
+            }
+
+            .absolute-wrapp-img {
+                top: 55%;
+            }
+        }
+    }
+
+    /* Accordion */
+    .sanjose-accordion {
+        .panel {
+            .panel-title {
+                a {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+    /* Pricing */
+    .sanjose-pricing {
+        &.modern {
+            .title-price {
+                font-size: 42px;
+                line-height: 42px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &.default {
+            .select-price {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+        .select-price {
+            li {
+                width: 100%;
+                text-align: center;
+
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    /* Contact form */
+    .sanjose-contact-form {
+        &.custom-form {
+            .wpcf7-form {
+                padding: 20px 20px 50px;
+            }
+        }
+    }
+
+    /* Product slideshow */
+    .sanjose-product-slideshow {
+        .product-content {
+            height: inherit;
+        }
+    }
+
+    // Info block
+    .sanjose-info-block {
+        .title {
+            margin-bottom: 20px;
+            font-size: 38px;
+            line-height: 48px;
+            .counter-list {
+                top: 10px;
+            }
+        }
+        .item-info {
+            margin-bottom: 60px;
+            .img {
+                margin: 0 auto;
+            }
+            .info-wrap {
+                max-width: 100%;
+            }
+        }
+    }
+    .sanjose-banner.style_2 .content-banner {
+        top: 90%;
+    }
+    .content-slide {
+        .title {
+            font: 500 32px "Montserrat", sans-serif!important;
+        }
+    }
+
+        .form-subscribe{
+            input[type="submit"] {
+                padding: 12px 20px!important;
+                font-size: 14px!important;
+
+            }
+        }
+
+    .sanjose-banner {
+        .content-banner {
+            top: 62%;
+        }
+    }
+    .main-footer {
+
+        .widget_nav_menu {
+            width: 100%;
+            float: left;
+        }
+    }
+    .button {
+        margin-right: 0;
+    }
+    .post-comments {
+        .comment-reply-title,
+        .title-comment {
+            &:after {
+                width: 38%;
+            }
+        }
+    }
+}
+
+@media ( max-width: 376px ) {
+    .sanjose-banner.style_1{
+        .absolute-img {
+            .btn{
+              right: 25%;
+              bottom: 105%;
+            }
+        }
+    }
+
+    .post-comments {
+        .title-comment{
+            &:after {
+                width: 56%;
+            }
+        }
+    }
+    .item-info {
+        .info-wrap {
+            .title {
+                text-align: center;
+                margin-left: 0;
+            }
+            .desc {
+                text-align: center;
+            }
+        }
+    }
+    .sanjose-text{
+        &.custom-lh {
+            text-align: center;
+            p {
+                padding-right: 0;
+            }
+        }
+    }
+    .sanjose-text.text-left {
+            text-align: center;
+        }
+    .mc4wp-form {
+        p {
+            text-align: center;
+        }
+    }
+    .post-comments {
+        .comment-reply-title,
+        .title-comment {
+            &:after {
+                width: 28%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .post-comments {
+        .comment-reply-title,
+        .title-comment {
+            &:after {
+                width: 82%;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .no-padd-left .vc_column-inner {
+        padding-left: 0 !important;
+    }
+
+    .no-padd-right .vc_column-inner {
+        padding-right: 0 !important;
+    }
+
+    .padd-lg-35l {
+        padding-left: 35px;
+    }
+}
+
+@media (min-width: 1450px) {
+
+    .padding-lg-100l {
+        padding-left: 100px;
+    }
+
+    .padding-lg-100r {
+        padding-right: 100px;
+    }
+
+    /* Banner */
+    .sanjose-banner {
+        &.style_2 {
+            height: 790px;
+
+            .wrapp-img {
+                top: 30%;
+            }
+        }
+
+        &.style_3 {
+            height: 705px;
+        }
+    }
+
+    .absolute-wrapp-img {
+        &:before {
+            left: 7%;
+        }
+
+        &:after {
+            right: 7%;
+        }
+    }
+    .wpb_single_image.wpb_content_element.position-left{
+        left: -161px;
+    }
+}

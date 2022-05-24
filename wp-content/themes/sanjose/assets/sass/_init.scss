@@ -1,0 +1,648 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* This is main CSS file that contains custom style rules used in this template */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* TABLE OF CONTENTS: */
+/*--------------------------------------------------------*/
+/* 00 - VARIABLES */
+/* 01 - CSS RESET BY ERIC MEYER */
+/* 02 - HEADER */
+/* 03 - FOOTER */
+/* 04 - TEXT BLOCK  */
+/* 05 - FEATURED BLOCK */
+/* 06 - BANNER */
+/* 07 - ACCORDION */
+/* 08 - TESTIMONIALS */
+/* 09 - BLOG PAGE */
+/* 10 - VIDEO BANNER */
+/* 11 - CLIENTS */
+/* 12 - BLOG POST */
+/* 13 - BUTTONS */
+/* 14 - FAQ INFO */
+/* 15 - PRICING */
+/* 16 - CONTACT INFO */
+/* 17 - CONTACT FORM */
+/* 18 - TIMELINE */
+/* 19 - CONTENT SLIDER */
+/* 20 - PRODUCT SLIDESHOW */
+/* 21 - PHONE SLIDESHOW */
+/* 22 - SEARCH PAGE */
+/* 23 - 404 PAGE */
+/* 24 - TEAM */
+/* 25 - PORTFOLIO */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - VARIABLES */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+$color1: #fff;
+$color2: #273140;
+$color3: #f42267;
+$color4: #3b55e6;
+$color5: rgb(58, 61, 75);
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'Droid Serif', serif;
+$font3: 'Open Sans', sans-serif;
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 01 - CSS RESET BY ERIC MEYER */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+  border-left: 3px solid #333;
+  padding-left: 20px;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #333;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+
+    thead,
+    tbody {
+        th,
+        td {
+            font-family: $font2;
+            font-size: 14px;
+            border: 1px solid #333;
+            text-align: center;
+            padding: 8px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+ol {
+  margin-bottom: 20px;
+  li {
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+  }
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+dl {
+  margin-bottom: 20px;
+  dd {
+    padding-left: 20px;
+  }
+}
+
+li,
+dl,
+dd {
+    font-family: $font1;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-family: $font1;
+    color: $color2;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p,
+.wp-caption-text,
+.pingback,
+#wp-calendar,
+address,
+figcaption{
+    font: 300 16px $font1;
+    color: #000;
+    line-height: 28px;
+}
+
+.pingback {
+    margin-bottom: 15px;
+}
+
+blockquote {
+    margin: 20px 0 23px;
+    overflow: hidden;
+    padding: 0 0 0 27px;
+    border-left: 3px solid $color3;
+
+    p {
+        font-family: $font2;
+        font-size: 18px;
+        font-weight: 700;
+        color: #3a3d4b;
+        line-height: 28px;
+    }
+}
+
+pre {
+    font-family: $font2;
+    font-size: 16px;
+    color: $color2;
+    line-height: 31px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+acronym {
+    border-bottom: 1px dashed #777;
+}
+
+big {
+    font-size: 2em;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+s, strike, del {
+    text-decoration: line-through;
+}
+
+a,
+a:visited {
+    color: $color4;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+.shadow-img .vc_single_image-wrapper {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.wpb_single_image.wpb_content_element {
+    margin-bottom: 0;
+}
+
+.product-absolute-img {
+    overflow: visible !important;
+}
+
+div[id*='wpadminba'] {
+  position: fixed !important;
+}
+
+.absolute-wrapp-img {
+    position: relative;
+    top: -100px;
+    z-index: 100;
+
+    &:before,
+    &:after {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 445px;
+        height: 750px;
+    }
+
+    &:before {
+        left: 0;
+        background-image: url('../images/left-banner-product.png');
+    }
+
+    &:after {
+        right: 0;
+        background-image: url('../images/right-banner-product.png');
+    }
+}
+
+.no-menu {
+  font-family: $font1;
+  color: $color1;
+  float: left;
+  line-height: 42px;
+
+  a {
+    font-family: $font1;
+    color: $color3;
+    margin-left: 10px;
+  }
+}
+
+.rel-position {
+    position: relative;
+}
+
+.flex-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-padd {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-padd-r {
+    padding-right: 0;
+}
+
+.no-padd-l {
+    padding-left: 0;
+}
+
+.position-right {
+    right: 0;
+}
+
+.position-left {
+    left: -115px;
+}
+.position-left-home {
+  right:0;
+}
+
+.position-top {
+    top: -150px;
+}
+
+.vc_row.bg-size-contain {
+    background-position: right !important;
+    background-size: contain !important;
+}
+
+.visible-hidden {
+    opacity: 0;
+}
+
+.paginate-mb-top {
+    .load-btn {
+        margin-top: 50px;
+    }
+}
+
+#loading {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0;
+    top: 0;
+    transition: background-color .3s ease-out;
+}
+
+.default-blog {
+
+    .main-header {
+      position: static;
+    }
+    .blog-list.default {
+      .post {
+        margin-bottom: 10px;
+      }
+    }
+    .sidebar {
+      &.blog-sidebar {
+        .sanjose-widget {
+          &.widget_text {
+            strong {
+              line-height: 1.2;
+            }
+          }
+          &.widget_pages {
+            .page_item_has_children {
+              border-bottom: 0;
+            }
+          }
+        }
+        .widget_nav_menu {
+          li {
+            border-bottom: 0;
+            padding: 0;
+            a {
+              margin-bottom: 5px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  
+    .rss-widget-icon {
+      margin-bottom: 5px;
+    }
+    .rsswidget {
+      color: rgba(#000, .6);
+    }
+    .textwidget p {
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .main-footer {
+        padding: 0;
+      .sanjose-widget {
+        margin-top: 32px;
+        .textwidget {
+          img {
+            display: inline-block;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .blog-list.default {
+        .post {
+            .wrapp-img {
+                height: inherit;
+                background-image: none !important;
+
+                img {
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    .post-detail {
+        .wrapp-img {
+            height: inherit;
+            background-image: none !important;
+
+            img {
+                display: block !important;
+            }
+        }
+    }
+    .post-item {
+      .entry-meta {
+        .info-post {
+
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  .sidebar.blog-sidebar .sanjose-widget p {
+    margin-bottom: 0;
+  }
+  .sidebar.blog-sidebar .sanjose-widget.widget_nav_menu ul {
+    padding-left: 10px;
+  }
+
+  .sidebar.blog-sidebar .sanjose-widget strong {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h6 {
+    margin-top: 20px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600!important;
+    line-height: 1;
+  }
+  .comment-ctn {
+    ul, ol {
+      margin-bottom: 20px;
+      ul, ol {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .post-comments .sanjose-comments-list li .comm-txt {
+    width: 75%;
+  }
+  .post-detail {
+      .title-post {
+        padding-left: 0;
+        margin-left: -2px;
+      }
+    .entry {
+      ol {
+        padding-left: 30px;
+      }
+    }
+  }
+  .wp-caption {
+    border: none;
+  }
+  dt {
+    font-weight: bold;
+  }
+  big {
+    font-size: 1.6em;
+  }
+  tt {
+    font-size: 13px;
+  }
+  .entry-meta {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+  .wp-caption {
+    background: inherit;
+    img {
+      max-width: 100%;
+    }
+  }
+  .widget_calendar {
+      td {
+        font-size: 12px;
+        padding: 5px;
+      }
+  }
+  .entry-meta {
+    margin-top: 16px;
+
+    .info-post {
+      padding-top: 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+
+  .post-comments .comment-reply-title:after,
+  .post-comments .title-comment:after {
+    border: none;
+  }
+
+  .post-comments {
+    .title-comment {
+      font-size: 19px
+    }
+  }
+  .list-category {
+    a {
+      display: inline-block;
+    }
+  }
+  .banner-post {
+    height: 0;
+  }
+  .banner-blog {
+    height: 0;
+  }
+  .sanjose-banner {
+    height: 0;
+  }
+  .post-item {
+    .background-wrapp {
+      height: 300px;
+    }
+    .read-more {
+      font-family: $font1!important;
+      font-size: 14px;
+    }
+  }
+}
+
+.post-detail {
+
+    .post-password-form {
+        input[type="password"] {
+            border: 2px solid rgba(34, 35, 40, 0.1);
+            border-radius: 25px;
+            font-family: $font1;
+            font-size: 16px;
+            font-weight: 400;
+            color: $color2;
+            line-height: 28px;
+            outline: none;
+            width: 100%;
+            padding: 10px 18px;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #3b55e6;
+            border: 1px solid #3b55e6;
+            border-radius: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: auto;
+            margin-top: 40px;
+            padding: 8px 42px;
+            transition: all .3s ease-out;
+        }
+    }
+}
+
+@media ( min-width: 992px ) {
+    .text-right-md {
+        text-align: right;
+    }
+
+    .no-padd-r-md {
+        padding-right: 0;
+
+        .vc_column-inner {
+            padding-right: 0 !important;
+        }
+    }
+}
+@media ( min-width: 1000px ) {
+  .no-padd-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
